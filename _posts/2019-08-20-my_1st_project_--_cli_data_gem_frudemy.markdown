@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My 1st Project -- CLI Data Gem Frudemy"
-date:       2019-08-20 22:16:17 +0000
+date:       2019-08-20 18:16:18 -0400
 permalink:  my_1st_project_--_cli_data_gem_frudemy
 ---
 
