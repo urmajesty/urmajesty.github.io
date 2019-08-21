@@ -6,7 +6,7 @@ permalink:  my_1st_project_--_cli_data_gem_frudemy
 ---
 
 
-The week leading up to my CLI project was great!  My cohort lead reviewed the basics of doing a scrape in a couple of study groups... we did a couple of object oriented scrapes as a group beforehand... I even had access to ton's of video on the learn.instruct site(https://instruction.learn.co/student/video_lectures#/) to help!!  It looked simple enough.  Therefore, I planned a very ambitious project.  Instead of the two level scrape that was required, I opted for a 4 level scrape!!  And it was going to have great graphics, color, it was going to be fast and efficent, and well put together.  
+The week leading up to my CLI project was great!  My cohort lead reviewed the basics of doing a scrape in a couple of study groups... we did a couple of object oriented scrapes as a group beforehand... I even had access to ton's of video on the learn.instruct site(https://instruction.learn.co/student/video_lectures#/) to help!!  It looked simple enough.  Therefore, I planned a very ambitious project.  Instead of the two level scrape that was required, I opted for a 4 level scrape!!  And it was going to have great graphics, color, it was going to be fast and efficient, and well put together.  
 
 My 1st obstacle was changing my environment to the local environment.  Just getting everything set up took almost a day, and researching how to move around in it doing this project took even more time.   Manuvering Github was also challenge.  Before now I had been avoiding working in the terminal using bash.   I spent hours learning that also, and went to 2 study groups about it.  Now I consider myself to be almost expert level Github and VS code lol.
 
