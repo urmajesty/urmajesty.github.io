@@ -34,14 +34,12 @@ Whenever you create an instance variable with in a controller route, that variab
 This assumes you also have a course model with in your app/models folder, that could look something like this:
 The user has attributes like a course and subject, so once the user object has been assigned to @user in the controller route, we can weave all those attributes right into our ERB template:
 We can even iterate through data in views. For example, let’s say we want to show all the courses in the course index page. First, we might assign all the courses into an instance variable in the teachent/index route:
-Then, iterate over the courses in the teachent/index.erb template
-
-Notice how we also linked to the course page using the course id, which will be processed by the get '/teachent/:id' route. Pretty cool.
+Then, iterate over the courses in the teachent/index.erb template.  That also linked to the course page using the course id, which will be processed by the get '/teachent/:id' route. 
 Note that these instance variables do not need to be objects from models; they can be any variable that you want to assign and use in the view.
-Now that we know how to get and use data from the URL, let’s take a look at processing data that gets sent through forms via the POST method.
- 
-Receiving user-input data from forms is the key to building web apps. We just need to correctly hook up your forms to our controllers. Let’s keep going with our course example–this time we’re going to create a course, so the first thing we’ll need is a basic form and route that will render it.
-Setting up the route is as simple as connecting the URL for a new course post to the proper view, which is going to contain our form. In this case, let’s say we want the url to be teachent/new:
+
+
+ Receiving user-input data from forms is the key to building web apps.  Next I needed to correctly hook up forms to the controllers. So in order to do this I need to create a basic form and route that will render it.
+Setting up the route is as easy as connecting the URL for a new course post to the proper view, which is going to contain our form. In this case, let’s say we want the url to be teachent/new:
 The <form class="" action="/teachents" method="post"> line is very important for setting up the route. The action attribute tells the controller what part of the code (that is, which route) should handle the form. Think of it like an address. The method attribute is simply how it’s going to get there, in this case via POST.
 The other important part is the name attribute on each input tag, as this is what sets up our params hash. I’ve put name="course", & name="subject", It will produce a hash.  When the form is submitted, this data is now available in a params hash!   So I set up the post route and use params to make a new course...  but I ran into a problem because once the form has been submitted, the user is going to be shown a blank page.  That's why post is important.  POST just sends the information, it doesn’t display it afterwards. After the course data has been processed and completed, it makes sense to show the finished course to the user. Sinatra has a  redirect method that will take the user to another page, in this case the course show page. Add it to the above route to get this.
 The redirect "/users/#{@user.id}" is going to send it to our user show route, get '/users/:id', so the user can be proud of their new creation.
