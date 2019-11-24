@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "My unbelievable RubyConf experience!"
-date:       2019-11-24 21:37:13 +0000
+date:       2019-11-24 16:37:14 -0500
 permalink:  my_unbelievable_rubyconf_experience
 ---
 
