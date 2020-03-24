@@ -12,7 +12,7 @@ Fetch and Promises had my mind boggled for a bit before I did my research.  So, 
 
 First, to understand fetch I had to know a little about AJAX (Asynchronous JavaScript) .  The short version is, that sometimes we want to do operations, and the functions that perform those operations don’t always run in order and/or sometimes they take a while to load.  That being said, you may have a function that takes a while to load, and the other functions can’t proceed until the one before it is done.  
 
-**AJAX Analogy Alert!** It’s kinda like the functions have to wait in a long line, at the grocery store, where every other function before it has at least 30 coupons to use.
+**AJAX Analogy Alert!** If your code is not asynchronous, it’s kinda like the functions have to wait in a long line, at the grocery store, where every other function before it has at least 30 coupons to use.
 
 ![](https://i.imgur.com/02a6qXs.gif)
 
