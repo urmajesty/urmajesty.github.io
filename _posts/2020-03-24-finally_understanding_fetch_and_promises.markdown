@@ -32,7 +32,20 @@ Once you understand Promises, understanding fetch is easy.
 
 Fetch is essentially a function that takes URL of your target website as it’s parameter(argument), and returns a Promise of the website’s data.  Then, (.then) if it’s successful, the response(“data”) becomes a function that returns the response (the promises of data) in JSON format.
 
+```
+**fetch('http://interestingwebsite.com')
+  .then((response) => {
+    return response.json();**
+  })
+```
+
 You will have to create a 2nd .then with a function passes the JSON Promise as a parameter so that you may get your actual parsed response body (JSON objects).
+
+```
+**  .then((data) => {
+    console.log(data);
+  });**
+```
 
 TADA!!!
 
