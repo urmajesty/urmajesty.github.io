@@ -1,14 +1,15 @@
 ---
 layout: post
-title:      "Finally understanding Fetch and Promises*"
+title:      "Finally understanding Fetch and Promises...*"
 date:       2020-03-24 02:35:01 -0400
 permalink:  finally_understanding_fetch_and_promises
 ---
 
 
-####  *...using analogies and not so technical verbiage
+####  *...using analogies and not so technical verbiage.
 
-Fetch and Promises had my mind boggled for a bit before I did my research.  So, I'm writing this blog post for those who may have a different learning style and is having trouble grasping the concepts.  
+
+Fetch and Promises had my mind boggled for a bit before I did my research.  So, I'm writing this blog post for those who may have a different learning style and are having trouble grasping the concepts.  
 
 First, to understand fetch I had to know a little about AJAX (Asynchronous JavaScript) .  The short version is, that sometimes we want to do operations, and the functions that perform those operations don’t always run in order and/or sometimes they take a while to load.  That being said, you may have a function that takes a while to load, and the other functions can’t proceed until the one before it is done.  
 
@@ -24,7 +25,7 @@ In a totally different real-life scenario,  if you have 2 functions,  and part o
 
 That’s where Promises come to the rescue.   Promises are a style of code the AJAX technique.  Promises, promise that an operation will be completed and holds the promise of a resulting value for that operation.  
 
-**Promise Analogy Alert!**  It’s like 2 friends, Promise and Operation, are in a grocery store checkout.  When it’s time to pay, Operation realizes he forgot his wallet.  So, his friend Promise agrees with the cashier, to let Operation leave with the groceries (render to the browser)  if the Promise stays there and promises the operation will return later with the payment (the data), thereby allowing Operation, to proceed to work as planned.  
+**Promise Analogy Alert!**  It’s like 2 friends, Promise and Operation, are in a grocery store checkout.  When it’s time to pay, Operation realizes he forgot his wallet.  So, his friend Promise agrees with the cashier, to let Operation leave with the groceries (render to the browser)  if  Promise stays there and promises the operation will return later with the payment (the data), thereby allowing Operation, to proceed to work as planned.  
 
 ![](https://i.imgur.com/9lgfchS.gif)
 
@@ -39,7 +40,7 @@ fetch('http://interestingwebsite.com')
   })
 ```
 
-You will have to create a 2nd .then with a function passes the JSON Promise as a parameter so that you may get your actual parsed response body (JSON objects).
+Then, you will have to create a 2nd .then function that passes the JSON Promise as a parameter, so that you may get your actual parsed response body (JSON objects).
 
 ```
  .then((data) => {
