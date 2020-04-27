@@ -23,7 +23,7 @@ Or, like the functions are in line to get off at an highway exit, and the functi
 
 In a totally different real-life scenario,  if you have 2 functions,  and part of the operation is in the 1st function and the other part to complete the operation is in the 2nd,  the 2nd function could run before the 1st.  If that happens, the 1st would come back as undefined, and the entire operation would fail.   When it pertains to code for a website, that could mean users look at a blank screen, for the full time it takes the operation to be processed and the content to be rendered to the browser.
 
-That’s where Promises come to the rescue.   Promises are a style of code the AJAX technique.  Promises, promise that an operation will be completed and holds the promise of a resulting value for that operation.  
+That’s where Promises come to the rescue.   Promises are a style of code the AJAX technique uses.  Promises, promise that an operation will be completed and holds the promise of a resulting value for that operation.  
 
 **Promise Analogy Alert!**  It’s like 2 friends, Promise and Operation, are in a grocery store checkout.  When it’s time to pay, Operation realizes he forgot his wallet.  So, his friend Promise agrees with the cashier, to let Operation leave with the groceries (render to the browser)  if  Promise stays there and promises the operation will return later with the payment (the data), thereby allowing Operation, to proceed to work as planned.  
 
