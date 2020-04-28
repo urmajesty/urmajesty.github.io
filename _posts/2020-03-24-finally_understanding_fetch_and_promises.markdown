@@ -31,7 +31,7 @@ That’s where Promises come to the rescue.   Promises are a style of code the A
 
 Once you understand Promises, understanding fetch is easy.
 
-Fetch is essentially a function that takes URL of your target website as it’s parameter(argument), and returns a Promise of the website’s data.  Then, (.then) if it’s successful, the response(“data”) becomes a function that returns the response (the promises of data) in JSON format.
+Fetch is essentially a function that takes URL of your target website as it’s parameter(argument), and returns a Promise of the website’s data(Promise Status, Promise Value).  Then, (.then) if it’s successful, the response(“data”) becomes a function that returns the response (the promises of data) in JSON format.
 
 ```
 fetch('http://interestingwebsite.com')
